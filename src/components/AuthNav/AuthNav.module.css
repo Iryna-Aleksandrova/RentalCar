@@ -1,0 +1,14 @@
+.link {
+  color: rgb(77, 21, 172);
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(20, 20, 82);
+  text-decoration: none;
+}
+
+.div {
+  display: flex;
+  gap: 18px;
+}

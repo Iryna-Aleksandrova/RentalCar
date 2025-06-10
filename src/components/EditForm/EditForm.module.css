@@ -1,0 +1,29 @@
+.form {
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px 6px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}

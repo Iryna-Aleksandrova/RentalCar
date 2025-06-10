@@ -1,0 +1,45 @@
+.contactForm {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  box-sizing: border-box;
+  width: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  border: 2px solid dimgray;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.input {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 12px;
+  border: 2px solid dimgray;
+  border-radius: 8px;
+  background-color: lightskyblue;
+  text-align: start;
+}
+
+.error {
+  font-size: 20px;
+  color: rgb(46, 2, 83);
+}

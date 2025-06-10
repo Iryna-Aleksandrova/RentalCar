@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  height: 38px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 6px 18px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #747bff;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.3s ease;
+  border-color: none;
+}
+
+button:hover {
+  border-color: #a6aaef;
+  background-color: #4f53a4;
+  transform: scale(1.1);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.error {
+  font-size: 20px;
+  color: rgb(46, 2, 83);
+}
+
+.message {
+  font-size: 20px;
+  color: rgb(46, 2, 83);
+}
