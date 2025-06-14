@@ -65,11 +65,11 @@ RentalCar — це сучасний React-додаток, створений д�
 Імʼя: Ірина Александрова
 Email: ira_aleksandrova@ukr.net
 GitHub: https://github.com/Iryna-Aleksandrova
-Telegram: @iriwe4kaaleksandrova
+Telegram: https://t.me/iriwe4kaaleksandrova
 
 ## 📥 Встановлення та запуск
 ```bash
-git clone git@github.com:Iryna-Aleksandrova/RentalCar.git 
+git clone https://github.com/Iryna-Aleksandrova/RentalCar.git
 cd rentalcar
 npm install
 npm run dev
