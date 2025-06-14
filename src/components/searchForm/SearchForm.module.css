@@ -1,0 +1,128 @@
+.brand {
+  width: 204px;
+  height: 44px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: var(--main-color-inputs);
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main);
+  border: none;
+}
+
+.form:not(:last-child) {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding-top: 84px;
+}
+
+.selectPrice {
+  width: 196px;
+  height: 44px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: var(--main-color-inputs);
+  border: none;
+  appearance: none;
+  max-height: 272px;
+  overflow-y: auto;
+}
+
+.price {
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(----main-color-gray);
+}
+
+.description {
+  font-family: var(--font-family-manrope);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--main-color-gray);
+  padding-bottom: 8px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.fields {
+  display: flex;
+}
+
+.fieldRight {
+  width: 160px;
+  height: 44px;
+  border-right: 1px solid var(--main-color-gray-light);
+  border-radius: 12px 0 0 12px;
+  background: var(--main-color-inputs);
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-black);
+  padding-left: 24px;
+}
+
+.fieldLeft {
+  width: 160px;
+  height: 44px;
+  border-radius: 0 12px 12px 0;
+  background: var(--main-color-inputs);
+  border: none;
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-black);
+  padding-left: 24px;
+}
+
+.fieldRight::placeholder,
+.fieldLeft::placeholder {
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-black);
+}
+
+.fieldRight::-webkit-outer-spin-button,
+.fieldRight::-webkit-inner-spin-button,
+.fieldLeft::-webkit-outer-spin-button,
+.fieldLeft::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  height: 44px;
+  border-radius: 12px;
+  padding: 12px 51px;
+  background: var(--main-color-button);
+  font-family: var(--font-family-manrope);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-white);
+}
+
+.btn:hover {
+  background: var(--main-color-button-hover);
+}

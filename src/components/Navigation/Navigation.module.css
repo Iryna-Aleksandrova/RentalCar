@@ -1,14 +1,26 @@
-.link {
-  color: rgb(97, 11, 246);
-  text-decoration: none;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--main-color-badges);
+  padding: 24px 120px;
+  height: 68px;
+  background: var(--main-color-badges);
+  margin-bottom: 4px;
 }
 
 .nav {
   display: flex;
-  gap: 28px;
+  text-align: center;
+  gap: 32px;
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-black);
 }
 
-.active {
-  color: rgb(81, 14, 119);
-  text-decoration: none;
+.nav:hover {
+  color: var(--main-color-button-hover);
 }

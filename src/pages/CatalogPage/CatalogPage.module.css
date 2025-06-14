@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.noCars {
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--main-color-button);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.error {
+  font-family: var(--font-family-manrope);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--main-color-error, #d32f2f);
+  background-color: var(--main-color-error-bg, #fdecea);
+  padding: 16px 20px;
+  max-width: 480px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2);
+}

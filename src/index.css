@@ -1,15 +1,40 @@
 :root {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-image: url(./assets/phone.jpg);
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  /* background-color: cadetblue; */
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --main-color-black: #101828;
+  --main-color-gray: #8e929a;
+  --main-color-button: #3470ff;
+  --main-color-button-hover: #0b44cd;
+  --main-color-gray-light: #dadde1;
+  --main-color-white: #fff;
+  --main-color-badges: #f2f4f7;
+  --main-color-inputs: #f7f7f7;
+
+  --font-family-manrope: 'Manrope', sans-serif;
+  --font-family-inter: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-manrope);
+  min-height: 100vh;
 }
 
 h1,
@@ -29,15 +54,29 @@ ol {
   list-style: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+li {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  outline: none;
 }
 
-a {
-  cursor: pointer;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 120px;
 }

@@ -1,18 +1,22 @@
-import DocumentTitle from '../../components/DocumentTitle';
+import { useNavigate } from 'react-router-dom';
 import s from './HomePage.module.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init();
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate('/catalog');
+  };
+
   return (
-    <div>
-      <DocumentTitle>Home</DocumentTitle>
-      <div>
-        <h1 data-aos="flip-left" className={s.title}>
-          Phonebook: All Your Contacts in One Place
-        </h1>
+    <div className={s.hero}>
+      <div className={s.main}>
+        <h1 className={s.title}>Find your perfect rental car</h1>
+        <p className={s.text}>
+          Reliable and budget-friendly rentals for any journey
+        </p>
+        <button className={s.btn} onClick={handleButtonClick}>
+          View Catalog
+        </button>
       </div>
     </div>
   );

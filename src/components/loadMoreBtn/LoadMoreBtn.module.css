@@ -1,0 +1,15 @@
+.btn {
+  padding: 12px 38px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-black);
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--main-color-button);
+  background-color: transparent;
+  border-radius: 12px;
+}
+.btn:hover {
+  border: 1px solid var(--main-color-button-hover);
+}

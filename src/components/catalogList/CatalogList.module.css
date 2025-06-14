@@ -1,0 +1,140 @@
+.catalogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 32px;
+  margin-top: 56px;
+  padding-bottom: 80px;
+}
+
+.catalogItem {
+  flex-basis: calc((100% - 3 * 32px) / 4);
+  position: relative;
+  max-height: 424px;
+}
+
+.carImage {
+  position: relative;
+  object-fit: cover;
+  width: 276px;
+  height: 268px;
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 20, 23, 0.5) 0%,
+    rgba(18, 20, 23, 0.5) 100%
+  );
+}
+
+.mainInfo {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  max-width: 276px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.carBrand {
+  position: relative;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  font-family: var(--font-family-manrope);
+  color: var(--main-color-black);
+  color: var(--main-color-button);
+}
+
+.addressRentalCompany {
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.addressRentalCompany::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-color: var(--main-color-gray-light);
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+.addressRentalCompany .additionalInfo::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-color: var(--main-color-gray-light);
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.addressRentalCompany .additionalInfo:last-child::after {
+  content: none;
+}
+
+.additionalInfo {
+  display: flex;
+  font-family: var(--font-family-manrope);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--main-color-gray);
+}
+
+.typeMileage {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.typeMileage .additionalInfo::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-color: var(--main-color-gray-light);
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.typeMileage .additionalInfo:last-child::after {
+  content: none;
+}
+
+.city::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-color: var(--main-color-gray-light);
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.accent {
+  color: var(--main-color-black);
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 51px;
+  height: 44px;
+  background: var(--main-color-button);
+  font-family: var(--font-family-manrope);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main-color-white);
+}
+
+.btn:hover {
+  background: var(--main-color-button-hover);
+}

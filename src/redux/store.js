@@ -1,6 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
-import contactsReducer from './contacts/slice';
-import filtersReducer from './filters/slice';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import {
   persistStore,
   persistReducer,
@@ -12,20 +10,29 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from './auth/slice';
 
-const authPersistConfig = {
-  key: 'auth',
+import carsReducer from './cars/slice.js';
+import filtersReducer from './filters/slice.js';
+import brandsReducer from './brands/slice.js';
+import favoritesReducer from './favorites/slice.js';
+
+const rootReducer = combineReducers({
+  cars: carsReducer,
+  filters: filtersReducer,
+  brands: brandsReducer,
+  favorites: favoritesReducer,
+});
+
+const persistConfig = {
+  key: 'root',
   storage,
-  whitelist: ['token'],
+  whitelist: ['filters', 'favorites'],
 };
 
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 export const store = configureStore({
-  reducer: {
-    contacts: contactsReducer,
-    filters: filtersReducer,
-    auth: persistReducer(authPersistConfig, authReducer),
-  },
+  reducer: persistedReducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {

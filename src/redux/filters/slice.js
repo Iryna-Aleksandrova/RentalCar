@@ -1,16 +1,49 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const slice = createSlice({
+const initialState = {
+  brand: '',
+  price: '',
+  mileageFrom: '',
+  mileageTo: '',
+};
+
+const filtersSlice = createSlice({
   name: 'filters',
-  initialState: {
-    name: '',
-  },
+  initialState,
   reducers: {
-    setNameFilter(state, action) {
-      state.name = action.payload;
+    setBrandFilter(state, action) {
+      state.brand = action.payload;
+    },
+    setPriceFilter(state, action) {
+      state.price = action.payload;
+    },
+    setMileageFrom(state, action) {
+      state.mileageFrom = action.payload;
+    },
+    setMileageTo(state, action) {
+      state.mileageTo = action.payload;
+    },
+    setMileageFilter(state, action) {
+      const { mileageFrom, mileageTo } = action.payload;
+      if (mileageFrom !== undefined) state.mileageFrom = mileageFrom;
+      if (mileageTo !== undefined) state.mileageTo = mileageTo;
+    },
+    clearFilters(state) {
+      state.brand = '';
+      state.price = '';
+      state.mileageFrom = '';
+      state.mileageTo = '';
     },
   },
 });
 
-export const { setNameFilter } = slice.actions;
-export default slice.reducer;
+export const {
+  setBrandFilter,
+  setPriceFilter,
+  setMileageFrom,
+  setMileageTo,
+  setMileageFilter,
+  clearFilters,
+} = filtersSlice.actions;
+
+export default filtersSlice.reducer;
