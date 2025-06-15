@@ -64,11 +64,13 @@
   - Валідація форми
   - Повідомлення про успішне бронювання
  
-👤 Автор
+## 👤 Автор
+
 Ірина Александрова
-📧 ira_aleksandrova@ukr.net
-🐙 GitHub: Iryna-Aleksandrova
-💬 Telegram: @iriwe4kaaleksandrova
+
+📧 [ira_aleksandrova@ukr.net](mailto:ira_aleksandrova@ukr.net)  
+🐙 [GitHub: Iryna-Aleksandrova](https://github.com/Iryna-Aleksandrova)  
+💬 [Telegram: @iriwe4kaaleksandrova](https://t.me/iriwe4kaaleksandrova)
 
 ## 🚀 Встановлення та запуск
 
