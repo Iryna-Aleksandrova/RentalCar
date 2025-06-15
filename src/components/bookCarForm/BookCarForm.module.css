@@ -1,0 +1,90 @@
+.container {
+  width: 640px;
+  border: 1px solid var(--main-color-gray-light);
+  border-radius: 10px;
+  padding: 32px;
+  margin-top: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.text {
+  color: var(--main-color-gray);
+  margin-bottom: 24px;
+}
+
+.field {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  border-color: transparent;
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  background-color: var(--main-color-inputs);
+  color: var(--main-color-black);
+  padding: 12px 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+.fieldTextArea {
+  width: 100%;
+  height: 88px;
+  border-radius: 12px;
+  border-color: transparent;
+  font-family: var(--font-family-manrope);
+  font-weight: 500;
+  background-color: var(--main-color-inputs);
+  color: var(--main-color-black);
+  padding: 12px 20px;
+  outline: none;
+  font-size: 16px;
+  resize: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  background-color: var(--main-color-button);
+  color: var(--main-color-white);
+  font-family: var(--font-family-manrope);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  border: none;
+  width: 166px;
+  height: 44px;
+  border-radius: 12px;
+  margin-top: 24px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: var(--main-color-button-hover);
+}
+
+.btn:disabled {
+  background-color: var(--main-color-gray);
+  color: var(--main-color-white);
+  cursor: not-allowed;
+}

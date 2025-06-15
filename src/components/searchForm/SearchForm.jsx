@@ -1,6 +1,7 @@
 import { useId, useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Select from 'react-select';
+import { NumericFormat } from 'react-number-format';
 import {
   setBrandFilter,
   setMileageFilter,
@@ -131,22 +132,26 @@ const SearchForm = () => {
           Car mileage / km
         </label>
         <div className={s.fields}>
-          <input
-            id={mileageId}
-            type="number"
+          <NumericFormat
             name="mileageFrom"
-            placeholder="From"
             className={s.fieldRight}
+            placeholder="From"
             value={mileageFrom}
-            onChange={e => setMileageFrom(e.target.value)}
+            thousandSeparator=" "
+            allowNegative={false}
+            allowLeadingZeros={false}
+            onValueChange={({ value }) => setMileageFrom(value)}
           />
-          <input
-            type="number"
+
+          <NumericFormat
             name="mileageTo"
-            placeholder="To"
             className={s.fieldLeft}
+            placeholder="To"
             value={mileageTo}
-            onChange={e => setMileageTo(e.target.value)}
+            thousandSeparator=" "
+            allowNegative={false}
+            allowLeadingZeros={false}
+            onValueChange={({ value }) => setMileageTo(value)}
           />
         </div>
       </div>

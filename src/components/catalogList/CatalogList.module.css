@@ -18,11 +18,6 @@
   width: 276px;
   height: 268px;
   border-radius: 14px;
-  background: linear-gradient(
-    180deg,
-    rgba(18, 20, 23, 0.5) 0%,
-    rgba(18, 20, 23, 0.5) 100%
-  );
 }
 
 .mainInfo {
