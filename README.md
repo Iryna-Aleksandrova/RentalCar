@@ -63,6 +63,12 @@
 - Форма оренди:
   - Валідація форми
   - Повідомлення про успішне бронювання
+ 
+👤 Автор
+Ірина Александрова
+📧 ira_aleksandrova@ukr.net
+🐙 GitHub: Iryna-Aleksandrova
+💬 Telegram: @iriwe4kaaleksandrova
 
 ## 🚀 Встановлення та запуск
 
@@ -72,10 +78,6 @@ cd RentalCar
 npm install
 npm run dev
 
-👤 Автор
-Ірина Александрова
-📧 ira_aleksandrova@ukr.net
-🐙 GitHub: Iryna-Aleksandrova
-💬 Telegram: @iriwe4kaaleksandrova
+
 
 
