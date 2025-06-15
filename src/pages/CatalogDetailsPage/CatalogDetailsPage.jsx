@@ -1,16 +1,12 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-
 import { getCarById } from '../../redux/cars/operations.js';
 import { clearCarDetails } from '../../redux/cars/slice.js';
-
 import Loader from '../../components/loader/Loader.jsx';
 import BookCarForm from '../../components/bookCarForm/BookCarForm.jsx';
-
 import DefaultLoadingCar from '../../assets/images/DefaultLoadingCar.png';
 import sprite from '../../assets/images/icons.svg';
-
 import s from './CatalogDetailsPage.module.css';
 
 const CatalogDetailsPage = () => {
