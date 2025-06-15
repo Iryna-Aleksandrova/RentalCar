@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import Navigation from './navigation/Navigation.jsx';
+import Navigation from './Navigation/Navigation';
 
 const Layout = () => {
   return (
