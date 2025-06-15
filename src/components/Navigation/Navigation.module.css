@@ -21,6 +21,17 @@
   color: var(--main-color-black);
 }
 
-.nav:hover {
+.link {
+  color: var(--main-color-black);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--main-color-button-hover);
+}
+
+.active {
+  font-weight: 700;
   color: var(--main-color-button-hover);
 }
